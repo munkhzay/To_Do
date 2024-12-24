@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo app</title>
+    <link rel="stylesheet" href="./todo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <body>
+    <div class="buttonresponsive">
+      <button class="entertask-button">
+        <div class="entertask-text">
+          <div class="entertask-head">Enter task</div>
+          
+            <input
+              placeholder="   task name..."
+              class="fname"
+              type="text"
+              id="fnamee"
+              name="fname"
+            /><br /><br />
+        
+          
+            <select class="selectStatus">
+              <option id="" value="">Select status</option>
+              <option id="todo" value="todo">To do</option>
+              <option id="inprogress" value="inprogress">In progress</option>
+              <option id="done" value="done">Done</option>
+              <option id="blocked" value="blocked">Blocked</option>
+            </select>
+          
+        </div>
+      </button>
+      <button class="subbutton" onclick="submitTaskFunction()">Submit</button>
+    </div>
+    <!-- //editsubbutton -->
+    <div class="editModel" id="editModel">
+      <button class="entertask-button">
+        <div class="entertask-text">
+          <div class="entertask-head">edit task</div>
+          
+            <input
+              placeholder="   task name..."
+              class="editnamename"
+              type="text"
+              id="editid"
+              name="editname"
+            /><br /><br />
+        
+          
+            <select class="selectStatus">
+              <option id="" value="">Select status</option>
+              <option id="todo" value="todo">To do</option>
+              <option id="inprogress" value="inprogress">In progress</option>
+              <option id="done" value="done">Done</option>
+              <option id="blocked" value="blocked">Blocked</option>
+            </select>
+          
+        </div>
+      </button>
+    </div>
+<!-- taskbutton -->
+    <button class="taskbutton" onclick="createTaskButton()">Add task</button>
+    <div class="todocontent">
+      <div class="card1">
+        <div id="frame1" class="framecontainer">
+          <div class="frame-1">
+            <div class="rec-home">
+              <div class="rectangle-1"></div>
+              <div class="text-1">To do</div>
+            </div>
+            <div class="number-1">5</div>
+          </div>
+          <div class="frame2">
+            <input class="checkbox" type="checkbox" />
+            <p class="text-2">[loan-managament] - Add card component</p>
+            <div class="frame-2-vector">
+              <button>
+                <img class="frame-2-vector1" src="./todo.img/edit.png" />
+              </button>
+              
+              <img id="frameTrash" class="frame-2-vector1" src="./todo.img/Frame.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div id="frame22" class="framecontainer">
+          <div class="frame-1">
+            <div class="rec-home">
+              <div class="rectangle-1-2"></div>
+              <div class="text-1">In Progress</div>
+            </div>
+            <div class="number-1">5</div>
+          </div>
+          <div class="frame2">
+            <input type="checkbox" />
+            <div class="text-2">[loan-managament] - Add card component</div>
+            <div class="frame-2-vector">
+              <img class="frame-2-vector1" src="./todo.img/edit.png" />
+              <img class="frame-2-vector1" src="./todo.img/Frame.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div id="frame3" class="framecontainer">
+          <div class="frame-1">
+            <div class="rec-home">
+              <div class="rectangle-1-3"></div>
+              <div class="text-1">Done</div>
+            </div>
+            <div class="number-1">5</div>
+          </div>
+          <div class="frame2">
+            <input type="checkbox" />
+            <div class="text-2">[loan-managament] - Add card component</div>
+            <div class="frame-2-vector">
+              <img class="frame-2-vector1" src="./todo.img/edit.png" />
+              <img class="frame-2-vector1" src="./todo.img/Frame.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div id="frame4" class="framecontainer">
+          <div class="frame-1">
+            <div class="rec-home">
+              <div class="rectangle-1-4"></div>
+              <div class="text-1">Blocked</div>
+            </div>
+            <div class="number-1">5</div>
+          </div>
+          <div class="frame2">
+            <input type="checkbox" />
+            <div class="text-2">[loan-managament] - Add card component</div>
+            <div class="frame-2-vector">
+              <img class="frame-2-vector1" src="./todo.img/edit.png" />
+              <img class="frame-2-vector1" src="./todo.img/Frame.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
